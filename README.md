@@ -61,8 +61,3 @@ AMI generally measures the amount of information shared between strings. If we s
 Unlike some other measures, this correlation need not be linear, or even numerical in nature. In fact, any statistical correlation can be modelled simply by changing the compression scheme. Zlib's standard encoder is a reasonable choice due to its efficiency and ability to significantly compress a broad range of file types. However, a priori knowledge about the strings in question can be used to inform the choice of encoder.
 
 One use of AMI is in performing document classification. For example, the distribution of French language strings is sufficiently different from the distribution of Spanish language strings that even a simple encoder such as Zlib can accurately to distinguish between them. For distributions which are closer, a more specific encoder may be required. 
-
-To perform classification, we use AMI to measure the KL divergence between two strings. Mutual information and KL divergence are related through the following identity:
-
-$$D_{\text{KL}}(x\ ||\ y) = H(x, y) - H(y) \approx L_{x||y}(x||y) - L_y(y)$$
-
