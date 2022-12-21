@@ -1,7 +1,7 @@
 import zlib
 
 
-encode = zlib.compress
+encode = lambda x: zlib.compress(x.encode('ascii', 'ignore'))
 
 
 def ami(x: str, y: str) -> float:
