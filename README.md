@@ -56,7 +56,7 @@ def ami(x: str, y: str) -> float:
 
 ## Uses
 
-AMI generally measures the amount of information shared between strings. If we sample from two independent random variables, the respective samples should share approximately share no information, and their normalized AMI score will be very close to zero. In contrast, two identical strings should have a score close to 1, indicating that they're highly correlated. Scores in between 0 and 1 therefore indicate the degree of correlation between strings. 
+AMI generally measures the amount of information shared between strings. If we sample from two independent random variables, the respective samples should share approximately no information, and their normalized AMI score will be very close to zero. In contrast, two identical strings should have a score close to 1, indicating that they're highly correlated. Scores in between 0 and 1 therefore indicate the degree of correlation between strings. 
 
 Unlike some other measures, this correlation need not be linear, or even numerical in nature. In fact, any statistical correlation can be modelled simply by changing the compression scheme. Zlib's standard encoder is a reasonable choice due to its efficiency and ability to significantly compress a broad range of file types. However, a priori knowledge about the strings in question can be used to inform the choice of encoder.
 
