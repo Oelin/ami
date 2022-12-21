@@ -1,6 +1,6 @@
 # Approximate Mutual Information (AMI)
 
-A compression-based teachnique for measuring mutual information between strings. 
+A compression-based measure mutual information between strings. 
 
 
 ## Theory
@@ -64,5 +64,5 @@ One use of AMI is in performing document classification. For example, the distri
 
 To perform classification, we use AMI to measure the KL divergence between two strings. Mutual information and KL divergence are related through the following identity:
 
-$$D_{\text{KL}}(x\ ||\ y) = $$
+$$D_{\text{KL}}(x\ ||\ y) = H(x, y) - H(y) \approx L_{x||y}(x||y) - L_y(y)$$
 
