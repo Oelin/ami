@@ -33,7 +33,7 @@ def ami2(x: str, y: str) -> float:
         return ((lx + ly) - lxy) / (lx + ly) * 2
 
 
-def ami_match(x: str, y: str, context: str) -> bool:
+def match(x: str, y: str, context: str) -> bool:
         """
         Returns which string, x or y, best matches the given context
         string. Can be used as a simple basic classifier.
