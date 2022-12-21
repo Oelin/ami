@@ -42,4 +42,4 @@ def match(x: str, y: str, context: str) -> bool:
         ami_x = ami2(x, context)
         ami_y = ami2(y, context)
         
-        return ami_x > ami_y
+        return ami_x < ami_y
