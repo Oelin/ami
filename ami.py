@@ -28,3 +28,15 @@ def ami2(x: str, y: str) -> float:
         lxy = min(lx + ly, max(0, lxy))
 
         return ((lx + ly) - lxy) / (lx + ly) * 2
+
+
+def ami_match(x: str, y: str, context: str) -> bool:
+        """
+        Returns which string, x or y, best matches the given context
+        string. Can be used as a simple basic classifier.
+        """
+        
+        ami_x = ami2(x, context)
+        ami_y = ami2(y, context)
+        
+        return ami_x > ami_y
