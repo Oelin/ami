@@ -24,5 +24,5 @@ def classify(x):
   return match(train_spanish, train_english, x)
 
 
-classify('pizza is the best food in the world') # returns 1 (English)
-classify('la pizza es la mejor comida del mundo') # returns 0 (Spanish)
+classify('pizza is the best food in the world') # returns 0 (English)
+classify('la pizza es la mejor comida del mundo') # returns 1 (Spanish)
